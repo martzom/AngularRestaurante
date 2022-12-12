@@ -7,18 +7,22 @@ import { NavbaruserComponent } from './components/navbaruser/navbaruser.componen
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { AcercaComponent } from './components/acerca/acerca.component';
+import { AdminserviciosComponent } from './components/adminservicios/adminservicios.component';
+import {HttpClientModule} from '@angular/common/http'
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     NavbaruserComponent,
     InicioComponent,
     ServiciosComponent,
-    AcercaComponent
+    AcercaComponent,
+    AdminserviciosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

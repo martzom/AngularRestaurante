@@ -1,0 +1,34 @@
+
+<div class="container mt-4 ">
+    <div class="card listado">
+    <div class="card-body">
+        <span class="h3">Listado de servicios
+          
+        </span>
+        <button type="button" routerLink="/create-empleado" class="btn float-end btn-success btno.lg ">Agregar</button>
+                <h5 style="margin-top: 30px;" *ngIf="servicios.length==0"> No hay datos para mostrar</h5>     
+            <table class="table table-dark mt-5 table-striped">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Detalle</th>
+                  <th>Imagen</th>
+                  <th>Funcion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="center" *ngFor="let servicio of servicios">
+                  <td>{{servicio.nombre}}</td>
+                  <td>{{servicio.detalle}}</td>
+                  <td>{{servicio.imagen}}</td>
+                  <td><i class="fa-solid fa-user-pen fa-lg text-info p-3"></i>
+                  <i class="fa-solid fa-trash fa-lg text-danger"></i></td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+    </div>
+</div>
+<p>hola</p>
+

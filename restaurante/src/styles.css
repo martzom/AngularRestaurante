@@ -335,6 +335,7 @@
     padding: 0px;
 }
 
+
 #videoModal .close {
     position: absolute;
     width: 30px;
@@ -478,3 +479,15 @@
     border-right: none;
 }
 /* You can add global styles to this file, and also import other style files */
+
+html,body{
+    height: 100%;
+}
+
+.form-floating{
+    text-align: start;
+}
+
+.errorLabel{
+    margin-left: 5px;
+}
